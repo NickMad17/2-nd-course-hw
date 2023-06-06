@@ -68,5 +68,38 @@ span{
 /* Games */
 
 .games{
-    min-height: 35rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.games a{
+    /* width: 23.6875rem; */
+    position: relative;
+}
+
+.games a img{
+    width: 100%;
+    border-radius: 1.25rem;
+    transition: all .3s;
+}
+
+.games img:hover {
+    box-shadow: 0 0px 0 5px rgb(3, 3, 54);
+    transform: scale(1.05);
+}
+
+.games a p{
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 240px;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    transition: all .3s;
 }
