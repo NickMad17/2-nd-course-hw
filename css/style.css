@@ -38,14 +38,12 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .header__title {
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.875rem;
   margin-bottom: 2rem;
 }
-
 .header__text {
   font-weight: 300;
   font-size: 1.125rem;
@@ -53,7 +51,6 @@ span {
   color: rgba(255, 255, 255, 0.5333333333);
   padding-bottom: 2.75rem;
 }
-
 .header__btn {
   color: #FFFFFF;
   font-weight: 400;
@@ -62,6 +59,11 @@ span {
   background: #9C0332;
   border-radius: 1.875rem;
   padding: 0.8125rem 4.625rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header__btn:hover {
+  background: #4f0213;
 }
 
 /* Games */
