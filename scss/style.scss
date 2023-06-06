@@ -85,7 +85,7 @@ span{
         /* width: 23.6875rem; */
         position: relative;
         overflow: hidden;
-        border-radius: 1.25rem;
+        border-radius: 20px;
 
         &:hover {
             & img{
@@ -100,7 +100,7 @@ span{
 
         img{
             width: 100%;
-            border-radius: 1.25rem;
+            border-radius: 20px;
             transition: all .5s;
             z-index: 10;
         }
@@ -133,17 +133,19 @@ span{
         padding-left: 8%;
         padding-right: 8%;
     }
-
     .games{
         a{
-            width: 350px;
+            width:  400px;
         }
     }
 }
 
-@media (max-width: 850px ){
-    htmL{
-        font-size: 12px;
+
+@media (max-width: 830px){
+    .games{
+        a{
+            width:  500px;
+        }
     }
 }
 
