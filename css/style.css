@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +9,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -31,6 +34,7 @@ span{
     padding-top: 12rem;
     min-height: 100vh;
     background-image: url(../img/bg-index.jpg);
+    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
