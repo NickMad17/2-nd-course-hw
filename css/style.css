@@ -25,8 +25,8 @@ span {
 }
 
 .center {
-  padding-left: calc(50% - 37.625rem);
-  padding-right: calc(50% - 37.625rem);
+  padding-left: calc(50% - 602px);
+  padding-right: calc(50% - 602px);
 }
 
 .header {
@@ -71,6 +71,9 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -105,7 +108,8 @@ span {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(2, 32, 71, 0.2274509804);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.507)), color-stop(49%, rgba(9, 9, 121, 0.397)), color-stop(99%, rgba(0, 213, 255, 0.384)));
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.507) 0%, rgba(9, 9, 121, 0.397) 49%, rgba(0, 213, 255, 0.384) 99%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,11 +121,39 @@ span {
           align-items: center;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
 }
 .games__anatation span {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .center {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .games a {
+    width: 350px;
+  }
+}
+@media (max-width: 850px) {
+  htmL {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  htmL {
+    font-size: 12px;
+  }
+  .games a {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  htmL {
+    font-size: 10px;
+  }
 }
