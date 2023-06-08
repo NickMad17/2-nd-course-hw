@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-
+// blocks
+@import "./blocks/btn";
 
 * {
     box-sizing: border-box;
@@ -50,18 +51,11 @@ span{
         font-weight: 300;
         font-size: 1.125rem;
         line-height: 2rem;
-        color: #ffffff88;
+        color: #ffffff96;
         padding-bottom: 2.75rem;
     }
 
     &__btn{
-        color: #FFFFFF;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.375rem;
-        background: #9C0332;
-        border-radius: 1.875rem;
-        padding: 0.8125rem 4.625rem;
         transition: all .5s;
 
         &:hover{
@@ -80,18 +74,21 @@ span{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     a{
         /* width: 23.6875rem; */
         position: relative;
         overflow: hidden;
         border-radius: 20px;
+        transition: ease 1.3s;
 
         &:hover {
+            box-shadow: 0 0 20px  #6773ff;
             & img{
-            box-shadow: 0 0px 0 5px rgb(3, 3, 54);
             transform: scale(1.1);
             }
+
             & .games__anatation{
                 transform: translateY(0); 
             }
@@ -127,6 +124,89 @@ span{
         }
     }
 }
+
+// game one
+
+
+.one{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8.4375rem;
+
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        h2{
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.6875rem;
+        }
+
+        p{
+            color: #ffffff96;
+            font-weight: 300;
+            font-size: 1.125rem;
+            line-height: 2rem; 
+        }
+    }
+}
+
+// game two
+
+.two{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8.4375rem;
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        h2{
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.6875rem;
+        }
+
+        p{
+            color: #ffffff96;
+            font-weight: 300;
+            font-size: 1.125rem;
+            line-height: 2rem; 
+        }
+    }
+}
+
+
+
+// footer
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: .1px solid #858585c0;
+
+    p{
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        padding: 2rem;
+    }
+}
+
+// media
 
 @media (max-width: 1300px){
     .center{
@@ -166,4 +246,5 @@ span{
         font-size: 10px;
     }
 }
+
 
