@@ -129,11 +129,13 @@ span{
 
 
 .one{
-    height: 100vh;
+    min-height: 100vh;
+    margin-top: 12.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 8.4375rem;
+    gap: 8.4rem;
+    flex-wrap: wrap;
 
 
     &__left{
@@ -155,17 +157,25 @@ span{
             line-height: 2rem; 
         }
     }
+
+    &__right{
+        img{
+            width: 100%;
+        }
+    }
 }
 
 // game two
 
 .two{
-    height: 100vh;
+    min-height: 100vh;
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 8.4375rem;
+    flex-wrap: wrap;
+    gap: 8.4rem;
 
     &__left{
         display: flex;
@@ -184,6 +194,12 @@ span{
             font-weight: 300;
             font-size: 1.125rem;
             line-height: 2rem; 
+        }
+    }
+
+    &__right{
+        img{
+            width: 100%;
         }
     }
 }
@@ -218,6 +234,14 @@ span{
             width:  400px;
         }
     }
+
+    .one{
+        flex-direction: column;
+    }
+
+    .two{
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -225,6 +249,30 @@ span{
     .games{
         a{
             width:  500px;
+        }
+    }
+
+    .one{
+        min-height: auto;
+
+        &__left{
+            width: 80%;
+        }
+
+        &__right{
+            width: 80%;
+        }
+    }
+
+    .two{
+        min-height: auto;
+
+        &__left{
+            width: 80%;
+        }
+
+        &__right{
+            width: 80%;
         }
     }
 }

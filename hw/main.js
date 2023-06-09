@@ -2,7 +2,7 @@ function hasTouch() {
     return 'ontouchstart' in document.documentElement
            || navigator.maxTouchPoints > 0
            || navigator.msMaxTouchPoints > 0;
-}
+};
 
 if (hasTouch()) { // remove all :hover stylesheets
     try { // prevent exception on browsers not supporting DOM styleSheets properly
@@ -19,4 +19,4 @@ if (hasTouch()) { // remove all :hover stylesheets
             }
         }
     } catch (ex) {}
-}
+};

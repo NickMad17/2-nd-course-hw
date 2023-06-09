@@ -142,17 +142,20 @@ span {
 }
 
 .one {
-  height: 100vh;
+  min-height: 100vh;
+  margin-top: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8.4375rem;
+  gap: 8.4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .one__left {
   display: -webkit-box;
@@ -178,23 +181,26 @@ span {
   font-size: 1.125rem;
   line-height: 2rem;
 }
+.one__right img {
+  width: 100%;
+}
 
 .two {
-  height: 100vh;
+  min-height: 100vh;
+  margin-top: 12.5rem;
+  margin-bottom: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8.4375rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8.4rem;
 }
 .two__left {
   display: -webkit-box;
@@ -219,6 +225,9 @@ span {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 2rem;
+}
+.two__right img {
+  width: 100%;
 }
 
 .footer {
@@ -248,10 +257,40 @@ span {
   .games a {
     width: 400px;
   }
+  .one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 @media (max-width: 830px) {
   .games a {
     width: 500px;
+  }
+  .one {
+    min-height: auto;
+  }
+  .one__left {
+    width: 80%;
+  }
+  .one__right {
+    width: 80%;
+  }
+  .two {
+    min-height: auto;
+  }
+  .two__left {
+    width: 80%;
+  }
+  .two__right {
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
