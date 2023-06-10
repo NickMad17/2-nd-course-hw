@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+.btn {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.375rem;
+  background: #9C0332;
+  border-radius: 1.875rem;
+  padding: 0.8125rem 4.625rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -48,17 +58,10 @@ span {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 2rem;
-  color: rgba(255, 255, 255, 0.5333333333);
+  color: rgba(255, 255, 255, 0.5882352941);
   padding-bottom: 2.75rem;
 }
 .header__btn {
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.375rem;
-  background: #9C0332;
-  border-radius: 1.875rem;
-  padding: 0.8125rem 4.625rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -79,16 +82,22 @@ span {
   gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .games a {
   /* width: 23.6875rem; */
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  -webkit-transition: ease 1.3s;
+  transition: ease 1.3s;
+}
+.games a:hover {
+  -webkit-box-shadow: 0 0 20px #6773ff;
+          box-shadow: 0 0 20px #6773ff;
 }
 .games a:hover img {
-  -webkit-box-shadow: 0 0px 0 5px rgb(3, 3, 54);
-          box-shadow: 0 0px 0 5px rgb(3, 3, 54);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -132,6 +141,114 @@ span {
   line-height: 2rem;
 }
 
+.one {
+  min-height: 100vh;
+  margin-top: 12.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8.4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.one__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2rem;
+}
+.one__left h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6875rem;
+}
+.one__left p {
+  color: rgba(255, 255, 255, 0.5882352941);
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.one__right img {
+  width: 100%;
+}
+
+.two {
+  min-height: 100vh;
+  margin-top: 12.5rem;
+  margin-bottom: 12.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8.4rem;
+}
+.two__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2rem;
+}
+.two__left h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6875rem;
+}
+.two__left p {
+  color: rgba(255, 255, 255, 0.5882352941);
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.two__right img {
+  width: 100%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0.1px solid rgba(133, 133, 133, 0.7529411765);
+}
+.footer p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  padding: 2rem;
+}
+
 @media (max-width: 1300px) {
   .center {
     padding-left: 8%;
@@ -140,10 +257,40 @@ span {
   .games a {
     width: 400px;
   }
+  .one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 @media (max-width: 830px) {
   .games a {
     width: 500px;
+  }
+  .one {
+    min-height: auto;
+  }
+  .one__left {
+    width: 80%;
+  }
+  .one__right {
+    width: 80%;
+  }
+  .two {
+    min-height: auto;
+  }
+  .two__left {
+    width: 80%;
+  }
+  .two__right {
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
