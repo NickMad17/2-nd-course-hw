@@ -13,12 +13,12 @@ if (hasTouch()) { // remove all :hover stylesheets
             for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
                 if (!styleSheet.rules[ri].selectorText) continue;
 
-//                 if (styleSheet.rules[ri].selectorText.match(':hover')) {
-//                     styleSheet.deleteRule(ri);
-//                 }
-//             }
-//         }
-//     } catch (ex) {
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+            }
+        }
+    } catch (ex) {
         
-//     }
-// };
+    }
+};

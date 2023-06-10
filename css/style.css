@@ -271,6 +271,9 @@ span {
   }
 }
 @media (max-width: 830px) {
+  htmL {
+    font-size: 14px;
+  }
   .games a {
     width: 500px;
   }
