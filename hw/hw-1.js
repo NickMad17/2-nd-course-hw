@@ -1,92 +1,92 @@
-// 1\
+// // 1\
 
-let numebr = 10;
+// let numebr = 10;
 
-alert(numebr);
+// alert(numebr);
 
-numebr = 20;
+// numebr = 20;
 
-alert(numebr);
+// alert(numebr);
 
-// 2\
+// // 2\
 
-const iphoneData = 2007;
+// const iphoneData = 2007;
 
-alert(iphoneData);
+// alert(iphoneData);
 
-// 3\
+// // 3\
 
-const oneJsUser = "Брендан Эйх";
+// const oneJsUser = "Брендан Эйх";
 
-alert(oneJsUser);
+// alert(oneJsUser);
 
-// 4\
+// // 4\
 
-let one = 10;
+// let one = 10;
 
-let two = 2;
+// let two = 2;
 
-alert(`Сумма = ${one + two}, Разность = ${one - two}, Произведение = ${one * two}, Чиастное = ${one / two}`);
+// alert(`Сумма = ${one + two}, Разность = ${one - two}, Произведение = ${one * two}, Чиастное = ${one / two}`);
 
-// 5\
+// // 5\
 
-let result = 2**5;
+// let result = 2**5;
 
-alert(result);
+// alert(result);
 
-// 6\
+// // 6\
 
-let a = 9;
+// let a = 9;
 
-let b = 2;
+// let b = 2;
 
-alert(a % b);
+// alert(a % b);
 
-// 7\
+// // 7\
 
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num ++;
-num --;
-alert(num);
+// let num = 1;
+// num += 5;
+// num -= 3;
+// num *= 7;
+// num /= 3;
+// num ++;
+// num --;
+// alert(num);
 
-// 8\
+// // 8\
 
-age = +prompt("Сколько вам лет?");
+// age = +prompt("Сколько вам лет?");
 
-alert(age);
+// alert(age);
 
-// 9\
+// // 9\
 
-let user = {
-    userName : "Nikita",
-    age : 24,
-    isAdmin : false
-};
+// let user = {
+//     userName : "Nikita",
+//     age : 24,
+//     isAdmin : false
+// };
 
-// 9.1\
+// // 9.1\
 
-user["city of residence"] = undefined;
+// user["city of residence"] = undefined;
 
-// 9.2\
+// // 9.2\
 
-user.age = 13;
+// user.age = 13;
 
-// 9.3\
+// // 9.3\
 
-delete user["city of residence"];
+// delete user["city of residence"];
 
-// 9.4\
+// // 9.4\
 
-let info = prompt("Какую информацию хотите узнать о пользователе?\n\nВозможные Варианты: userName, age, idAdmin\n");
+// let info = prompt("Какую информацию хотите узнать о пользователе?\n\nВозможные Варианты: userName, age, idAdmin\n");
 
-alert(user[info]);
+// alert(user[info]);
 
-// 10\
+// // 10\
 
-userName = prompt("Введите своё имя:");
+// userName = prompt("Введите своё имя:");
 
-alert(`Привет, ${userName}`);
+// alert(`Привет, ${userName}`);
