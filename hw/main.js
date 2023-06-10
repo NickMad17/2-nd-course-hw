@@ -18,5 +18,7 @@ if (hasTouch()) { // remove all :hover stylesheets
                 }
             }
         }
-    } catch (ex) {}
+    } catch (ex) {
+        
+    }
 };
