@@ -107,6 +107,7 @@ span {
 }
 .games a img {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
