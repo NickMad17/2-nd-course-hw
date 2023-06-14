@@ -59,7 +59,7 @@
 //         case 6:
 //             console.log(year[2])
 //             break;
-
+ 
 //         case 7:
 //         case 8:
 //         case 9:
@@ -104,32 +104,32 @@
 //     console.error("Некорректный ввод");
 // };
 
-// //  ------8,9-------
-// const WINDOW_WIDTH = window.screen.width;
+//  ------8,9-------
+const WINDOW_WIDTH = window.screen.width;
 
-// if (WINDOW_WIDTH < 450){ // Делаем проверку на размер экрана.
+if (WINDOW_WIDTH < 450){ // Делаем проверку на размер экрана.
 
-//     let phonChek = Boolean(confirm("У вас Android?"));
-//     let year = +prompt("Введите год выпуска вышего телефона");
+    let phonChek = Boolean(confirm("У вас Android?"));
+    let year = +prompt("Введите год выпуска вышего телефона");
 
-//     if(year ===  year){
-//         if(year > 2015){
-//             if(phonChek){
-//                 alert("Установите версию приложения для Android по ссылке");
-//             }else{
-//                 alert("Простите для вас ссылок нет, пожалуйста, преобретите Android");
-//             };
-//         }else{
-//             if(phonChek){
-//                 alert("Установите облегченную версию приложения для Android по ссылке");
-//             }else{
-//                 alert("У вас точно никогда ничего не запустится, купите Android");
-//             };
-//         }
-//     }else{
-//         console.error(`Ошибка , год не может быть ${year}`);
-//     }
-// }else{
-//     alert("Установите версию приложения для Пк по ссылке");
-// };
+    if(year ===  year){
+        if(year > 2015){
+            if(phonChek){
+                alert("Установите версию приложения для Android по ссылке");
+            }else{
+                alert("Простите для вас ссылок нет, пожалуйста, преобретите Android");
+            };
+        }else{
+            if(phonChek){
+                alert("Установите облегченную версию приложения для Android по ссылке");
+            }else{
+                alert("У вас точно никогда ничего не запустится, купите Android");
+            };
+        }
+    }else{
+        console.error(`Ошибка , год не может быть ${year}`);
+    }
+}else{
+    alert("Установите версию приложения для Пк по ссылке");
+};
 
