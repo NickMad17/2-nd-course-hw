@@ -46,7 +46,7 @@
 //     4: "Осень"
 // };
 
-// if (numbYear >= 0){
+// if (numbYear > 0){
 //     switch (numbYear) {
 //         case 1:
 //         case 2:
