@@ -30,9 +30,9 @@ if (hasTouch()) { // remove all :hover stylesheets
 ScrollReveal({ 
     // reset: true,
     distance: '80px',
-    duration: 1500,
-    delay: 100
+    duration: 2000,
+    delay: 150
 });
 
-ScrollReveal().reveal('.header__title, .header__text, .one__left, .two__left, .three p, .three h1', { origin: 'top' });
-ScrollReveal().reveal('.games, .one__right , .two__right, .three a, .header a ', { origin: 'bottom' });
+ScrollReveal().reveal('.header__title, .games, .header__text, .one__left, .two__left, .three p, .three h1', { origin: 'top' });
+ScrollReveal().reveal('.one__right , .two__right, .three a, .header a ', { origin: 'bottom' });
