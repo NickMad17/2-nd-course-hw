@@ -7,6 +7,11 @@
   background: #9C0332;
   border-radius: 30px;
   padding: 0.8125rem 4.625rem;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: #4f0213;
 }
 
 * {
@@ -61,13 +66,6 @@ span {
   color: rgba(255, 255, 255, 0.5882352941);
   padding-bottom: 2.75rem;
 }
-.header__btn {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.header__btn:hover {
-  background: #4f0213;
-}
 
 /* Games */
 .games {
@@ -104,6 +102,17 @@ span {
 .games a:hover .games__anatation {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+.games a p {
+  display: none;
+  position: absolute;
+  left: 10%; /* 50/500 */
+  bottom: 12.5%; /* 50/400 */
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  z-index: 200;
 }
 .games a img {
   width: 100%;
@@ -189,7 +198,7 @@ span {
 .two {
   min-height: 100vh;
   margin-top: 12.5rem;
-  margin-bottom: 12.5rem;
+  padding-bottom: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +240,41 @@ span {
   width: 100%;
 }
 
+.three {
+  min-height: 100vh;
+  background-image: url(.././img/three-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.three h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6875rem;
+}
+.three p {
+  color: rgba(255, 255, 255, 0.5882352941);
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,11 +287,17 @@ span {
           align-items: center;
   border-top: 0.1px solid rgba(133, 133, 133, 0.7529411765);
 }
-.footer p {
+.footer a {
+  color: rgba(255, 255, 255, 0.5882352941);
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.9375rem;
   padding: 2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.footer a:hover {
+  color: #FFFFFF;
 }
 
 @media (max-width: 1300px) {
@@ -277,6 +327,9 @@ span {
   }
   .games a {
     width: 500px;
+  }
+  .games a p {
+    display: block;
   }
   .one {
     min-height: auto;

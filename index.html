@@ -8,7 +8,7 @@
     <title>Game</title>
 </head>
 <body>
-    <header class="header center">
+    <header class="header center" id="header">
         <h1 class="header__title">
             Добро пожаловать <br>
             на мой сайт !
@@ -16,7 +16,8 @@
 
         <p class="header__text">Вам предстоит пройти несколько увлекательных <br> игр. Если готов нажимай <span>поехали</span>  и <span>приступай</span> </p>
 
-        <a href="#games" class="btn header__btn">Поехали!</a>
+        <a href="#games" class="btn">Поехали!</a>
+        
     </header>
 
     <section class="games center" id="games">
@@ -24,6 +25,7 @@
                 <div class="games__anatation">
                     <span>Игра 1</span>
                 </div>
+                <p>Игра 1</p>
                 <img src="./img/game_1.jpg" alt="">
             </a>
 
@@ -31,13 +33,15 @@
                 <div class="games__anatation">
                     <span>Игра 2</span>
                 </div>
+                <p>Игра 2</p>
                 <img src="./img/game_2.jpg" alt="">
             </a>
 
-            <a href="#"> 
+            <a href="#three"> 
                 <div class="games__anatation">
                     <span>Игра 3</span>
                 </div>
+                <p>Игра 3</p>
                 <img src="./img/game_3.jpg" alt="">
             </a>
 
@@ -79,17 +83,29 @@
         </div>
     </section>
 
+    <section class="three center" id="three">
+        <h1>Игра в загадки</h1>
+
+        <p>Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <a href="#" class="btn one__btn">Играть</a>
+    </section>
+
     <footer class="footer center" id="footer">
-        <p>Все права защищены</p>
+        <a href="#header">Все права защищены</a>
     </footer>
 
-    <!-- Del hover -->
 
-<script src="./hw/main.js"></script>
+<!-- scrollReveal -->
 
-<!-- hw two -->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-<script src="./hw/hw-3.js"></script>
+<!-- hw -->
+
+<!-- <script src="./js/hw-4.js"></script> -->
+
+<!-- main.js -->
+
+<script src="./js/main.js"></script>
 
 </body>
 </html>

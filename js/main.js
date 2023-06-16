@@ -1,3 +1,5 @@
+// -------- del hover ----------
+
 function hasTouch() {
     return 'ontouchstart' in document.documentElement
            || navigator.maxTouchPoints > 0
@@ -22,3 +24,15 @@ if (hasTouch()) { // remove all :hover stylesheets
         
     }
 };
+
+// -------- scrollReveal ----------
+
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 100
+});
+
+ScrollReveal().reveal('.header__title, .header__text, .one__left, .two__left, .three p, .three h1', { origin: 'top' });
+ScrollReveal().reveal('.games, .one__right , .two__right, .three a, .header a ', { origin: 'bottom' });
