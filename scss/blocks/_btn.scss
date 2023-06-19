@@ -6,4 +6,8 @@
     background: #9C0332;
     border-radius: 30px;
     padding: 0.8125rem 4.625rem;
+    transition: background-color .5s;
+    &:hover{
+        background-color: #4f0213;
+    }
 }
