@@ -67,25 +67,30 @@
 // 7
 
 function perimetrCircle() {
-    return 2 * this.radius * Math.PI;
+  return 2 * this.radius * Math.PI;
 }
 function squareCircle() {
-    return Math.PI * (this.radius)**2;
+  return Math.PI * this.radius ** 2;
 }
 
 const circle1 = {
-    radius: 3,
-    perimetrCircle: perimetrCircle,
-    squareCircle: squareCircle
-}
+  radius: 3,
+  perimetrCircle: perimetrCircle,
+  squareCircle: squareCircle,
+};
 
 const circle2 = {
-    radius: 3,
-    perimetrCircle: perimetrCircle,
-    squareCircle: squareCircle
-}
+  radius: 3,
+  perimetrCircle: perimetrCircle,
+  squareCircle: squareCircle,
+};
 
-console.log(circle1.perimetrCircle(), circle2.perimetrCircle(), circle1.squareCircle(), circle2.squareCircle());
+console.log(
+  circle1.perimetrCircle(),
+  circle2.perimetrCircle(),
+  circle1.squareCircle(),
+  circle2.squareCircle()
+);
 
 
 
