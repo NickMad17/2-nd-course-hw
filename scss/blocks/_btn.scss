@@ -8,6 +8,7 @@
     padding: 0.8125rem 4.625rem;
     transition: background-color .5s;
     &:hover{
-        background-color: #4f0213;
+      background-color: #4f0213;
+      cursor: pointer;
     }
 }
