@@ -25,6 +25,35 @@ function getSeason() {
     }
 }
 
+// ----------- game two ------------
+
+function startGameTwo(){
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+    let randNumber = Math.ceil(Math.random() * (list.length - 2) + 2);
+    let result = 0;
+    alert(list);
+    let answerOne = prompt("Чему равнялся первый элемент массива?");
+    let answerTwo = prompt("Чему равнялся последний элемент массива?");
+    let answerThree = prompt(`Чему равнялся ${randNumber} элемент массива ?`);
+
+    answerOne.toLowerCase() === list[0].toLowerCase() ? result ++: result;
+    answerTwo.toLowerCase() === list[list.length - 1].toLowerCase() ? result++ : result;
+    answerThree.toLowerCase() === list[randNumber - 1].toLowerCase() ? result++ : result;
+
+    if (result === 3){
+        alert('Поздравляю тебя! Ты генний!')
+    } else if (result === 2){
+        alert("Вы были близки к победе!")
+    } else if (result === 1) {
+        alert("Неплохая память, но можно лучше)")
+    } else {
+        alert("Вы ничего не угадали")
+    }
+
+}
+
+
 // -------- del hover ----------
 
 function hasTouch() {
@@ -48,16 +77,16 @@ if (hasTouch()) { // remove all :hover stylesheets
             }
         }
     } catch (ex) {
-        
+
     }
 };
 
 // -------- scrollReveal ----------
 
-ScrollReveal({ 
+ScrollReveal({
     // reset: true,
     distance: '80px',
-    duration: 2000,
+    duration: 1800,
     delay: 150
 });
 
