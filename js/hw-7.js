@@ -67,7 +67,7 @@
 // console.log(currentDate);
 
 // // 10
-//
+
 // function getMonthTitle (date){
 //     const arrMonth = [
 //         "Январь", "Февраль", "Март",
@@ -75,16 +75,16 @@
 //         "Июль", "Август", "Сентябрь",
 //         "Октябрь", "Ноябрь", "Декабрь",
 //     ]
-//
+
 //     return arrMonth[date.getMonth()]
 // }
-//
+
 // function getWeekDay(date) {
 //     let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
-//
+
 //     return days[date.getDay()];
 // }
-//
+
 // function generateDate(Date) {
 //     let result;
 //     let resultDate = "Дата: ";
@@ -101,32 +101,52 @@
 //       " " +
 //       getWeekDay(Date) +
 //       "\n";
-//
+
 //     let resultTime = "Время: ";
-//
+
 //     if (Date.getHours() < 10 ){
 //         resultTime += "0";
 //     }
 //     resultTime += Date.getHours() + ":";
-//
+
 //     if (Date.getMinutes() < 10 ){
 //         resultTime += "0";
 //     }
 //     resultTime += Date.getMinutes() + ":";
-//
+
 //     if (Date.getSeconds() < 10){
 //         resultTime += "0";
 //     }
 //     resultTime += Date.getSeconds() + ".";
-//
+
 //     result = resultDate + resultTime
-//
+
 //     return result
 // }
-//
+
 // let myDate = new Date();
-//
+
 // console.log(generateDate(myDate))
+
+// // 10.2
+
+// const date = new Date(2014, 11, 31, 12, 30, 0); 
+// console.log(date.toTimeString()); 
+//   let time = { 
+//     hour: 'numeric', 
+//     minute: 'numeric', 
+//     second: 'numeric' 
+//   }; 
+//   let options = { 
+//     year: 'numeric', 
+//     month: 'long', 
+//     day: 'numeric', 
+//   } 
+//   let weekday = {  
+//     weekday: 'long' 
+//   } 
+// console.log(date.toLocaleString('ru', options) + ' - ' + 'это ' + date.toLocaleString('ru', weekday)); 
+// console.log(date.toLocaleString('ru', time));
 
 // // 11
 // function startGameTwo(){
@@ -156,4 +176,5 @@
 // }
 //
 // console.log(hello())
+
 
