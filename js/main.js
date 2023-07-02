@@ -32,7 +32,17 @@ function startGameTwo(){
     list = list.sort(() => Math.random() - 0.5);
     let randNumber = Math.ceil(Math.random() * (list.length - 2) + 2);
     let result = 0;
-    alert(list);
+    let windowList = "";
+    let count = 0;
+    for (let i = 0; i < list.length; i++){
+        if (count >= 6){
+            windowList+= "\n"
+            count = 0;
+        }
+        windowList += list[i] + " ";
+        count++;
+    }
+    alert(windowList)
     let answerOne = prompt("Чему равнялся первый элемент массива?");
     let answerTwo = prompt("Чему равнялся последний элемент массива?");
     let answerThree = prompt(`Чему равнялся ${randNumber} элемент массива ?`);
