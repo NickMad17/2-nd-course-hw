@@ -12,16 +12,31 @@ const month = { // обьект содержащий => номер месяца 
     9: "Осень",
     10: "Осень",
     11: "Осень",
-    12: "Зима"
+    12: "Зима",
+    "январь": "Зима",
+    "февраль": "Зима",
+    "март": "Весна",
+    "апрель": "Весна",
+    "май": "Весна",
+    "июнь": "Лето",
+    "июль": "Лето",
+    "август": "Лето",
+    "сентябрь": "Осень",
+    "октябрь": "Осень",
+    "ноябрь": "Осень",
+    "декабрь": "Зима"
 };
 
 function getSeason() {
-    let mouthNumber = +prompt("Введите номер месяца");
+    let mouthPrompt = prompt("Введите номер месяца");
 
-    if(isNaN(mouthNumber) || mouthNumber > 12 || mouthNumber <= 0){
-        alert("Нужно ввести число от 1 до 12");
-    } else{
-        alert(`Время года: ${month[mouthNumber]}`);
+    
+    if (!isNaN(+mouthPrompt) && mouthPrompt < 12 && mouthPrompt >= 0) {
+        alert(`Время года: ${month[mouthPrompt]}`);
+    } else if (month[mouthPrompt.toLocaleLowerCase()] !== undefined) {
+        alert(`Время года: ${month[mouthPrompt.toLocaleLowerCase()]}`); 
+    } else {
+        alert("Нужно ввести число от 1 до 12 или название месяца");
     }
 }
 
@@ -35,14 +50,15 @@ function startGameTwo(){
     let windowList = "";
     let count = 0;
     for (let i = 0; i < list.length; i++){
-        if (count >= 6){
+        if (count >= 7){
             windowList+= "\n"
             count = 0;
         }
         windowList += list[i] + " ";
         count++;
     }
-    alert(windowList)
+
+    alert("Запомните список \n\n" + windowList)
     let answerOne = prompt("Чему равнялся первый элемент массива?");
     let answerTwo = prompt("Чему равнялся последний элемент массива?");
     let answerThree = prompt(`Чему равнялся ${randNumber} элемент массива ?`);
