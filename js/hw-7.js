@@ -130,23 +130,23 @@
 
 // // 10.2
 
-// const date = new Date(2014, 11, 31, 12, 30, 0); 
-// console.log(date.toTimeString()); 
-//   let time = { 
-//     hour: 'numeric', 
-//     minute: 'numeric', 
-//     second: 'numeric' 
-//   }; 
-//   let options = { 
-//     year: 'numeric', 
-//     month: 'long', 
-//     day: 'numeric', 
-//   } 
-//   let weekday = {  
-//     weekday: 'long' 
-//   } 
-// console.log(date.toLocaleString('ru', options) + ' - ' + 'это ' + date.toLocaleString('ru', weekday)); 
-// console.log(date.toLocaleString('ru', time));
+const date = new Date(2014, 11, 31, 12, 30, 0);
+console.log(date.toTimeString());
+  let time = {
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+  };
+  let options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }
+  let weekday = {
+    weekday: 'long'
+  }
+console.log(date.toLocaleString('ru', options) + ' - ' + 'это ' + date.toLocaleString('ru', weekday));
+console.log(date.toLocaleString('ru', time));
 
 // // 11
 // function startGameTwo(){
