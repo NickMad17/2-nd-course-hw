@@ -7,7 +7,6 @@
   background: #9C0332;
   border-radius: 30px;
   padding: 0.8125rem 4.625rem;
-  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 .btn:hover {
@@ -16,8 +15,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -72,37 +70,27 @@ span {
 .games {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 2rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .games a {
   /* width: 23.6875rem; */
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  -webkit-transition: ease 1.3s;
   transition: ease 1.3s;
 }
 .games a:hover {
-  -webkit-box-shadow: 0 0 20px #6773ff;
-          box-shadow: 0 0 20px #6773ff;
+  box-shadow: 0 0 20px #6773ff;
 }
 .games a:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 .games a:hover .games__anatation {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .games a p {
   display: none;
@@ -119,7 +107,6 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 10;
 }
@@ -130,20 +117,11 @@ span {
   top: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.507)), color-stop(49%, rgba(9, 9, 121, 0.397)), color-stop(99%, rgba(0, 213, 255, 0.384)));
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.507) 0%, rgba(9, 9, 121, 0.397) 49%, rgba(0, 213, 255, 0.384) 99%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 1.3s;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
   transition: all 1.3s;
 }
 .games__anatation span {
@@ -155,30 +133,16 @@ span {
 .one {
   min-height: 100vh;
   margin-top: 12.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 8.4rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .one__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
 }
 .one__left h2 {
@@ -200,30 +164,16 @@ span {
   min-height: 100vh;
   margin-top: 12.5rem;
   padding-bottom: 12.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 8.4rem;
 }
 .two__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
 }
 .two__left h2 {
@@ -247,19 +197,10 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 .three h1 {
@@ -277,19 +218,10 @@ span {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-top: 0.1px solid rgba(133, 133, 133, 0.7529411765);
 }
 .footer a {
@@ -298,7 +230,6 @@ span {
   font-size: 0.75rem;
   line-height: 0.9375rem;
   padding: 2rem;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .footer a:hover {
@@ -314,16 +245,10 @@ span {
     width: 400px;
   }
   .one {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .two {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 830px) {
@@ -360,19 +285,10 @@ span {
     font-size: 12px;
   }
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 0;
   }
   .header__title {
@@ -397,3 +313,5 @@ span {
     font-size: 10px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
